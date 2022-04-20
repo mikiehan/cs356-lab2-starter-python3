@@ -28,7 +28,7 @@ By **final** deadline
 ssh into a CS machine and run the following command.
 ```
 cshost$ cd {YourFolderName}
-cshost$ git clone https://github.com/cs356-sp22/lab1-{YourTeamName}
+cshost$ git clone https://github.com/cs356-sp22/lab2-{YourTeamName}
 cshost$ jupyter-notebook --no-browser
 ```
 With the command above you should see jupter notebook running on the CS machine and it will output a URL that looks like below.
@@ -50,8 +50,8 @@ On your local machine, open up a browser and type the URL that you obtained in S
 This should open to the Jupyter notebook file selection window.  Juypter notebook is actually running on port
 8888 on the cs machine but you can access it through your local machine browser.
 
-In the file selection window, enter the `lab1-{YourTeamName}` directory and 
-navtigate to `Lab1_Notebook.ipynb` and open the notebook. 
+In the file selection window, enter the `lab2-{YourTeamName}` directory and 
+navtigate to `Lab2_Notebook.ipynb` and open the notebook. 
 
 You will see the instructions for the rest of the assignment.  Work through this notebook from top to bottom and complete the sections marked "TODO."
 
