@@ -24,43 +24,34 @@ By **final** deadline
 
 ## Getting Started
 
-On your host machine (not the VM), go to the root of the `Lab0` folder (Not `Lab2` folder but `Lab0`, the very first lab)
+#### Step 1.
+ssh into a CS machine and run the following command.
 ```
-$ cd {YourOwnPath}/lab-{YourTeamNameForLab0}
-$ ls
+cshost$ cd {YourFolderName}
+cshost$ git clone https://github.com/cs356-sp22/lab1-{YourTeamName}
+cshost$ jupyter-notebook --no-browser
 ```
-With the ls command above you should see `README.md` and `assignments` directory
-Let's cd into this `assignments` directory and under assignments git clone your team repository for Lab 2
+With the command above you should see jupter notebook running on the CS machine and it will output a URL that looks like below.
 ```
-$ cd assignments
-$ git clone https://github.com/cs356-sp21/lab2-{YourTeamName}
+http://localhost:8888/?token={SomeLongString}
 ```
-You should see the starter code created under assignments/lab1-{YourTeamName}
+Copy this URL to a clipboard. 
 
-Now let's start up the VM.
+#### Step 2.
+On your off campus local machine run the following command in the terminal.
 ```
-$ cd ../ # you are under assignments directory
-$ vagrant destroy
-$ vagrant up
-$ vagrant ssh
+local$ ssh -L 8888:localhost:8888 {YourCSUserName}@{cshost}.cs.utexas.edu
 ```
+You need to replace {YourCSUserName} and {cshost} accordingly, where {cshost} is the machine that you used in Step 1. 
 
-On the VM, run the command `sudo ~/.local/bin/jupyter-notebook &`. This will
-start a new Jupyter notebook server in the background. Even though it is
-running in the background, it will sometimes print informative messages to the
-terminal. You can press Enter each time you get a message to get the shell
-prompt back. To shut down the notebook, run `fg` then press Control-C twice
-(once to get the confirmation message, another time to skip confirmation).
+#### Step 3.
+On your local machine, open up a browser and type the URL that you obtained in Step 1 after running jupyter-notebook command including the token string.
 
-While the notebook is running, on your host machine, open up your browser and
-type `localhost:8888` in the address bar. This should open to the Jupyter
-notebook file selection window.  Juypter notebook is actually running on port
-8888 on your vagrant VM, but you can access it through your host machine
-browser because the port is being forwarded between the VM and the host
-machine.  
+This should open to the Jupyter notebook file selection window.  Juypter notebook is actually running on port
+8888 on the cs machine but you can access it through your local machine browser.
 
-In the file selection window, enter the `lab2-{YourTeamName}` directory and 
-navtigate to `Lab2_Notebook.ipynb` and open the notebook. 
+In the file selection window, enter the `lab1-{YourTeamName}` directory and 
+navtigate to `Lab1_Notebook.ipynb` and open the notebook. 
 
 You will see the instructions for the rest of the assignment.  Work through this notebook from top to bottom and complete the sections marked "TODO."
 
