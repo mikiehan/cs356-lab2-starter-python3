@@ -11,7 +11,7 @@ def check(value, correct_hash):
 
 
 def check_synonly_percent(percentage):
-    correct_hash = b'J\r\xe9bAA\x99\xfb\xda)L;II\xcd\xc6'
+    correct_hash = b'*8\xa4\xa91lI\xe5\xa83Q|E\xd3\x10p'
     test_percentage = str(round(percentage)).encode("utf-8")
     if check(test_percentage, correct_hash):
         print("Hashes match. Your percentage of SYN-only flows is correct.")
@@ -20,7 +20,7 @@ def check_synonly_percent(percentage):
 
 
 def check_percent_knownbad(percentage):
-    correct_hash = b'\x9fA\xf9\xf1\xc44q\x8a\xe6\xe5\x0f\xfb\xa6\x11R\xd0'
+    correct_hash = b'\x16y\t\x1cZ\x88\x0f\xafo\xb5\xe6\x08~\xb1\xb2\xdc'
     test_percentage = str(round(percentage)).encode("utf-8")
     if check(test_percentage, correct_hash):
         print("Hashes match. Your percentage of known bad flows is correct.")
@@ -29,7 +29,7 @@ def check_percent_knownbad(percentage):
 
 
 def check_percent_synonly_knownbad(percentage):
-    correct_hash = b'b\xdc\xa4\x9f\x07\x81\xbf&\xb40[\xdd\xb0AK\xea'
+    correct_hash = b'\xf8\x99\x13\x9d\xf5\xe1\x05\x93\x96C\x14\x15\xe7p\xc6\xdd'
     test_percentage = str(round(percentage)).encode("utf-8")
     if check(test_percentage, correct_hash):
         print("Hashes match. Your percentage of SYN-only flows out of the known bad flows is correct.")
@@ -38,7 +38,7 @@ def check_percent_synonly_knownbad(percentage):
 
 
 def check_percent_synonly_other(percentage):
-    correct_hash = b'J\r\xe9bAA\x99\xfb\xda)L;II\xcd\xc6'
+    correct_hash = b'*8\xa4\xa91lI\xe5\xa83Q|E\xd3\x10p'
     test_percentage = str(round(percentage)).encode("utf-8")
     if check(test_percentage, correct_hash):
         print("Hashes match. Your percentage of SYN-only flows out of the remaining flows is correct.")
