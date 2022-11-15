@@ -1,14 +1,12 @@
 # Lab 2 : Passive Network Measurement
   
-For this lab, you may work solo or with one other partner of your choice.
-You are not allowed to copy or look at code from other teams. However,
-you are welcome to discuss the assignments with any students without sharing code.
+If you are doing this lab for extra credit, you must work on solo. Otherwise, you may work with one other partner of your choice. You are not allowed to copy or look at code from other teams. 
 
-## Team Info
+## Team Info 
 
 Partner A: Name (UTEID)
 
-Partner B: Name (UTEID)
+Partner B: Name (UTEID) - Put none if you are working on solo.
 
 (Note once the team is formed, you may not leave the team as code base is very small.)
 
