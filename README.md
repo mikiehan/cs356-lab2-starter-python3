@@ -1,6 +1,6 @@
 # Lab 2 : Passive Network Measurement
   
-If you are doing this lab for extra credit, you must work on solo. Otherwise, you may work with one other partner of your choice. You are not allowed to copy or look at code from other teams. 
+You may work with one other partner of your choice. You are not allowed to copy or look at code from other teams. 
 
 ## Team Info 
 
