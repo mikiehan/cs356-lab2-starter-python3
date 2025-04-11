@@ -2,13 +2,10 @@
   
 You may work with one other partner of your choice. You are not allowed to copy or look at code from other teams. 
 
-## Team Info 
+## Your Info
 
-Partner A: Name (UTEID)
-
-Partner B: Name (UTEID) - Put none if you are working on solo.
-
-(Note once the team is formed, you may not leave the team as code base is very small.)
+Name:
+UTEID:
 
 ### Check Course Calendar/Canvas for Due Dates
 By **checkpoint** deadline
@@ -26,8 +23,10 @@ By **final** deadline
 ssh into a CS machine and run the following command.
 ```
 cshost$ cd {YourFolderName}
-cshost$ git clone https://github.com/cs356-sp22/lab2-{YourTeamName}
-cshost$ jupyter-notebook --no-browser
+cshost$ git clone git@github.com:cs326e-sp25/lab2-{YourGitHubID}.git
+cshost$ cd lab2-{YourGithubID}
+cshost$ export PATH=$PATH:/lusr/bin
+cshost$ jupyter notebook --no-browser
 ```
 With the command above you should see jupter notebook running on the CS machine and it will output a URL that looks like below.
 ```
